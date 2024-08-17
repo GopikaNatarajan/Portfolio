@@ -1,0 +1,294 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #125025;
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(to right, #1d1b1c, #2e2b2b);
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #23d458;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.03);
+}
+
+/* Home Section */
+#home {
+    background-color:#000000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: none;
+    display: flex;
+            padding: 10px;
+            padding-left: 5cm;
+}
+.image-section {
+    flex: 1;
+    /* padding: 10px; */
+}
+.image-section img{
+    height: 8.5cm;
+    width:7cm;
+}
+.content-section {
+    flex: 2;
+    padding: 5px;
+    text-align:left;
+    padding-top:1cm ;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    margin-top: -0.2cm;
+    color:#23d458;
+}
+
+#home p {
+    font-size: 24px;
+    margin-bottom: 1cm;
+}
+
+/* About Me Section */
+#about,#portfolio,#blog,#contact{
+    background-color:#1d1b1c;
+
+}
+#about{
+    display: flex;
+           
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #ddd;
+}
+#about h3{
+    color: #106b2c;
+    font-size: xx-large;
+    margin-top: .2cm;
+    text-align: center;
+}
+.about-section, .skills-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+}
+.about-section {
+    background-color:#161616;
+    margin-right: 20px;
+}
+.skills-section {
+    background-color:#161616;
+    margin-right: 20px;
+}
+h3 {
+    margin-bottom: 15px;
+}
+p, ul {
+    margin: 10px 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 5px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#106b2c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.btn:hover {
+    background-color: #070707;
+    color: green;
+}
+/* Portfolio Section */
+#portfolio{
+    background-color: black;
+}
+#portfolio h2 {
+    color:#2cd85f;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: -1cm;
+}
+
+#portfolio .project {
+    background: #2e2c2c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding-left: 1cm;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.project-section{
+ display: flex;
+ padding:1cm;
+ flex-wrap: wrap; /* Allows wrapping of projects if necessary */
+            gap: 20px;
+}
+.project{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Adjusts the width of the projects */
+    min-width: 250px; /* Ensures a minimum width */
+}
+
+#portfolio .project h3 {
+    font-size: 28px;
+    color: #d6cdcb;
+    margin-bottom: 10px;
+}
+
+#portfolio .project p {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #1bd698;
+}
+#portfolio .project a {
+    color: #2cdd85;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#portfolio .project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact h2 {
+    color:#0cd147;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #080808;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #48e055;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2b2a2a;
+    border: 1px solid #1b1b1b;
+    font-size: 16px;
+}
+
+#contact-form button {
+    padding: 15px;
+    background: linear-gradient(to right, #272727, #3eb30f);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: linear-gradient(to right, #82e275, #080808);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #0e0d0d;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 20px;
+    }
+}
